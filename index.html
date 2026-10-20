@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>刘雅珍 · 初中学习资料导航</title>
+    <style>
+        :root {
+            --ink: #1e293b;
+            --muted: #64748b;
+            --bg: #0f172a;
+            --card: #ffffff;
+            --u1: #d97706;
+            --u2: #b91c1c;
+            --u3: #1d4ed8;
+            --u4: #6d28d9;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--ink);
+            line-height: 1.75;
+            padding: 48px 16px 80px;
+            min-height: 100vh;
+        }
+        .container { max-width: 800px; margin: 0 auto; }
+
+        .header { text-align: center; margin-bottom: 48px; }
+        .header h1 { color: #f8fafc; font-size: 1.8rem; letter-spacing: 2px; font-weight: 700; }
+        .header p { color: #94a3b8; font-size: 0.9rem; margin-top: 10px; }
+
+        .grade-title {
+            display: flex; align-items: center; gap: 12px;
+            margin: 32px 0 20px;
+        }
+        .grade-title .dot {
+            width: 10px; height: 10px; border-radius: 50%;
+            background: linear-gradient(135deg, var(--u1), var(--u2));
+        }
+        .grade-title h2 { color: #f1f5f9; font-size: 1.15rem; font-weight: 700; }
+
+        .subject-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 16px;
+        }
+
+        .subject-card {
+            display: block;
+            background: var(--card);
+            border-radius: 14px;
+            padding: 22px 20px;
+            text-decoration: none;
+            color: var(--ink);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border-left: 5px solid transparent;
+        }
+        .subject-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+        }
+        .subject-card.history { border-left-color: var(--u2); }
+        .subject-card.geo { border-left-color: var(--u3); }
+
+        .subject-card .icon {
+            font-size: 1.6rem; margin-bottom: 8px;
+        }
+        .subject-card .name {
+            font-size: 1.05rem; font-weight: 700; margin-bottom: 4px;
+        }
+        .subject-card .desc {
+            font-size: 0.8rem; color: var(--muted); line-height: 1.5;
+        }
+
+        .footer {
+            text-align: center; margin-top: 64px;
+            color: #475569; font-size: 0.78rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📚 初中学习资料导航</h1>
+            <p>按年级 · 按学科 快速访问知识点时间轴与概念辨析</p>
+        </div>
+
+        <div class="grade-title">
+            <span class="dot"></span>
+            <h2>七年级上册</h2>
+        </div>
+
+        <div class="subject-grid">
+            <a class="subject-card history" href="liuyazhen/七年级上册/2024版人教版七年级上册_历史.html">
+                <div class="icon">🏛️</div>
+                <div class="name">历史 · 时间轴</div>
+                <div class="desc">2024版人教版 · 概念辨析增强版</div>
+            </a>
+
+            <a class="subject-card geo" href="liuyazhen/七年级上册/湘教版七年级上册_地理.html">
+                <div class="icon">🌍</div>
+                <div class="name">地理 · 知识点</div>
+                <div class="desc">湘教版七年级上册</div>
+            </a>
+        </div>
+
+        <div class="footer">
+            持续更新中 · 更多学科敬请期待
+        </div>
+    </div>
+</body>
+</html>
