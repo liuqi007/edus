@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024版 · 湘教版七年级上册地理 · 全册考点速记</title>
+    <style>
+        :root {
+            --ch1: #0f766e; --ch1-bg: #ccfbf1;
+            --ch2: #b45309; --ch2-bg: #fef3c7;
+            --ch3: #1d4ed8; --ch3-bg: #dbeafe;
+            --ch4: #6d28d9; --ch4-bg: #ede9fe;
+            --ch5: #be123c; --ch5-bg: #ffe4e6;
+            --ch6: #475569; --ch6-bg: #f1f5f9;
+            --ink: #1e293b;
+            --bg: #0f172a;
+            --card: #ffffff;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--ink);
+            line-height: 1.75;
+            padding: 32px 16px 80px;
+        }
+        .header { max-width: 1040px; margin: 0 auto 28px; text-align: center; }
+        .header h1 { color: #f8fafc; font-size: 1.7rem; letter-spacing: 2px; font-weight: 700; }
+        .header p { color: #94a3b8; font-size: 0.9rem; margin-top: 8px; }
+
+        .intro-strip {
+            max-width: 1040px; margin: 0 auto 36px;
+            background: #1e293b; border-radius: 12px; padding: 16px 22px;
+            color: #cbd5e1; font-size: 0.84rem; line-height: 2; text-align: center;
+        }
+        .intro-strip strong { color: #fbbf24; }
+
+        .timeline { max-width: 1040px; margin: 0 auto; position: relative; }
+        .timeline::before {
+            content: ""; position: absolute; left: 30px; top: 0; bottom: 0;
+            width: 3px;
+            background: linear-gradient(to bottom, var(--ch1), var(--ch2), var(--ch3), var(--ch4), var(--ch5), var(--ch6));
+            border-radius: 3px;
+        }
+
+        .unit-title { position: relative; padding-left: 68px; margin: 46px 0 20px; }
+        .unit-title:first-of-type { margin-top: 0; }
+        .unit-title .badge {
+            position: absolute; left: 0; top: 50%; transform: translateY(-50%);
+            width: 60px; height: 60px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-weight: 800; font-size: 0.78rem; color: #fff;
+            box-shadow: 0 0 0 6px var(--bg); z-index: 1;
+            text-align: center; line-height: 1.15; padding: 6px;
+        }
+        .unit-title h2 { color: #f1f5f9; font-size: 1.12rem; font-weight: 700; margin-bottom: 4px; }
+        .unit-title .sub { color: #94a3b8; font-size: 0.82rem; }
+
+        .c1 .badge { background: var(--ch1); } .c2 .badge { background: var(--ch2); }
+        .c3 .badge { background: var(--ch3); } .c4 .badge { background: var(--ch4); }
+        .c5 .badge { background: var(--ch5); } .c6 .badge { background: var(--ch6); }
+
+        .node { position: relative; padding-left: 68px; margin-bottom: 20px; }
+        .node::before {
+            content: ""; position: absolute; left: 21px; top: 24px;
+            width: 17px; height: 17px; border-radius: 50%;
+            border: 3px solid var(--bg); z-index: 1;
+        }
+        .c1 .node::before { background: var(--ch1); box-shadow: 0 0 0 2px var(--ch1); }
+        .c2 .node::before { background: var(--ch2); box-shadow: 0 0 0 2px var(--ch2); }
+        .c3 .node::before { background: var(--ch3); box-shadow: 0 0 0 2px var(--ch3); }
+        .c4 .node::before { background: var(--ch4); box-shadow: 0 0 0 2px var(--ch4); }
+        .c5 .node::before { background: var(--ch5); box-shadow: 0 0 0 2px var(--ch5); }
+        .c6 .node::before { background: var(--ch6); box-shadow: 0 0 0 2px var(--ch6); }
+
+        .card {
+            background: var(--card); border-radius: 12px; padding: 20px 22px;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.18);
+        }
+        .tag {
+            display: inline-block; font-size: 0.74rem; font-weight: 700;
+            padding: 2px 10px; border-radius: 20px; margin-bottom: 8px;
+            letter-spacing: 0.4px;
+        }
+        .c1 .tag { background: var(--ch1-bg); color: var(--ch1); }
+        .c2 .tag { background: var(--ch2-bg); color: var(--ch2); }
+        .c3 .tag { background: var(--ch3-bg); color: var(--ch3); }
+        .c4 .tag { background: var(--ch4-bg); color: var(--ch4); }
+        .c5 .tag { background: var(--ch5-bg); color: var(--ch5); }
+        .c6 .tag { background: var(--ch6-bg); color: var(--ch6); }
+
+        .card h3 { font-size: 1.04rem; margin-bottom: 10px; color: #0f172a; }
+        .card ul { list-style: none; padding: 0; }
+        .card ul li {
+            font-size: 0.9rem; color: #334155; padding-left: 18px; position: relative;
+            margin-bottom: 6px;
+        }
+        .card ul li::before { content: "▸"; position: absolute; left: 0; color: #94a3b8; font-size: 0.8rem; }
+
+        .hl { background: #fef08a; padding: 0 3px; border-radius: 3px; font-weight: 600; color: #713f12; }
+        .status {
+            display: inline-block; font-size: 0.7rem; padding: 1px 8px;
+            border-radius: 4px; margin-left: 6px; font-weight: 600; vertical-align: middle;
+        }
+        .must { background: #fecaca; color: #991b1b; }
+        .key { background: #bfdbfe; color: #1e40af; }
+        .first { background: #bbf7d0; color: #166534; }
+
+        .compare { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 0.83rem; }
+        .compare th, .compare td { border: 1px solid #e2e8f0; padding: 7px 10px; text-align: left; vertical-align: top; }
+        .compare th { background: #f8fafc; font-weight: 700; color: #475569; }
+        .compare td:first-child { font-weight: 600; color: #1e293b; background: #f8fafc; }
+
+        .qa {
+            margin-top: 12px; padding: 11px 14px;
+            background: #f1f5f9; border-left: 3px solid #64748b; border-radius: 0 6px 6px 0;
+            font-size: 0.85rem; color: #334155;
+        }
+        .qa strong { color: #0f172a; }
+
+        .formula {
+            display: inline-block; background: #e2e8f0; padding: 2px 10px; border-radius: 6px;
+            font-family: monospace; font-size: 0.88rem; color: #0f172a; font-weight: 600;
+        }
+
+        @media (max-width: 640px) {
+            body { padding: 20px 10px 60px; }
+            .timeline::before { left: 18px; }
+            .unit-title, .node { padding-left: 48px; }
+            .unit-title .badge { width: 42px; height: 42px; font-size: 0.62rem; }
+            .node::before { left: 10px; width: 15px; height: 15px; }
+            .card { padding: 15px; }
+            .header h1 { font-size: 1.25rem; }
+            .compare { font-size: 0.76rem; }
+            .compare th, .compare td { padding: 5px 7px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>地理 · 七年级上册</h1>
+    <p>2024 湘教版 · 全册考点速记 · 概念辨析 · 表格对比</p>
+</div>
+
+<div class="intro-strip">
+    <strong>地理的“第二语言”</strong>：地图三要素 = 方向 + 比例尺 + 图例与注记<br>
+    <strong>空间尺度主线</strong>：地球仪基础 → 地球运动 → 海陆与地形 → 居民与文化 → 气候 → 发展差异
+</div>
+
+<div class="timeline">
+
+    <!-- ==================== 第一章 ==================== -->
+    <div class="unit-title c1">
+        <span class="badge">第一章</span>
+        <h2>让我们走进地理</h2>
+        <div class="sub">地图三要素 · 比例尺大小 · 地理与生活</div>
+    </div>
+
+    <div class="node c1">
+        <div class="card">
+            <span class="tag">概念辨析 · 高频问答</span>
+            <h3>地图三要素：方向、比例尺、图例与注记 <span class="status must">必背</span></h3>
+            <table class="compare">
+                <tr><th>要素</th><th>核心要点</th><th>关键判断</th></tr>
+                <tr>
+                    <td>方向</td>
+                    <td>①一般定向：上北下南，左西右东；②指向标：箭头指向北；③经纬网：经线指南北，纬线指东西</td>
+                    <td>有指向标时，<span class="hl">优先看指向标</span>，不能默认“上北下南”</td>
+                </tr>
+                <tr>
+                    <td>比例尺</td>
+                    <td><span class="formula">比例尺 = 图上距离 / 实地距离</span><br>形式：数字式、线段式、文字式</td>
+                    <td><span class="hl">分母越大 → 比例尺越小 → 范围越大 → 内容越简略</span></td>
+                </tr>
+                <tr>
+                    <td>图例与注记</td>
+                    <td>图例 = 符号；注记 = 文字与数字</td>
+                    <td>图例是“读图钥匙”，注记是“文字说明”</td>
+                </tr>
+            </table>
+            <div class="qa">
+                <strong>易错辨析：</strong>“比例尺越大，地图内容越详细”这一说法<strong>正确</strong>，但要注意前提：是<strong>图幅相同</strong>的情况下。如果图幅不同，不能直接比较比例尺大小与内容详略的关系。
+            </div>
+        </div>
+    </div>
+
+    <div class="node c1">
+        <div class="card">
+            <span class="tag">地理与生活 · 理解性考点</span>
+            <h3>地理环境如何影响人类生活？</h3>
+            <ul>
+                <li><strong>服饰：</strong>藏袍适应青藏高原昼夜温差大；阿拉伯白色长袍反射阳光、防风沙。</li>
+                <li><strong>饮食：</strong>川菜多辣椒与四川盆地潮湿气候有关；粤菜清淡与沿海物产丰富有关。</li>
+                <li><strong>生产建设：</strong>农业强调<span class="hl">因地制宜</span>；工厂选址需考虑原料、能源、水源、市场、运输。</li>
+                <li><strong>风土人情：</strong>荷兰风车与低洼地势和风力资源相关；威尼斯小船反映河网密布。</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ==================== 第二章 ==================== -->
+    <div class="unit-title c2">
+        <span class="badge">第二章</span>
+        <h2>认识地球</h2>
+        <div class="sub">地球仪 · 经纬网 · 自转与公转</div>
+    </div>
+
+    <div class="node c2">
+        <div class="card">
+            <span class="tag">基础数据 · 必背</span>
+            <h3>地球的形状与大小 <span class="status first">基础送分点</span></h3>
+            <ul>
+                <li>形状：<span class="hl">两极稍扁、赤道略鼓的不规则球体</span>。</li>
+                <li>平均半径约 <strong>6371 千米</strong>；赤道周长约 <strong>4 万千米</strong>；表面积约 <strong>5.1 亿平方千米</strong>。</li>
+                <li>证明球体的经典证据：麦哲伦环球航行（首次实践证实）、卫星照片（最直观）、海岸观船先见桅杆、月食时地球影子呈圆弧形。</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="node c2">
+        <div class="card">
+            <span class="tag">概念辨析 · 全册最大易错点</span>
+            <h3>纬线 vs 经线：本质区别是什么？ <span class="status must">高频选择题</span></h3>
+            <table class="compare">
+                <tr><th>对比项</th><th>纬线</th><th>经线</th></tr>
+                <tr><td>形状</td><td>圆（极点除外）</td><td><span class="hl">半圆</span></td></tr>
+                <tr><td>长度</td><td>不等，赤道最长，向两极递减</td><td><span class="hl">所有经线等长</span></td></tr>
+                <tr><td>指示方向</td><td>东西方向</td><td>南北方向</td></tr>
+                <tr><td>度数范围</td><td>0°—90°（北纬 N / 南纬 S）</td><td>0°—180°（东经 E / 西经 W）</td></tr>
+                <tr><td>0°线</td><td>赤道</td><td>本初子午线（格林尼治）</td></tr>
+                <tr><td>半球划分</td><td>赤道划分南北半球</td><td><span class="hl">20°W 与 160°E 划分东西半球</span></td></tr>
+            </table>
+            <div class="qa">
+                <strong>东西半球判断口诀：</strong>“<strong>小小为东，大大为西</strong>”——经度小于 20° 一律在东半球，大于 160° 一律在西半球；20°—160° 之间看字母（E 为东半球，W 为西半球）。<br>
+                <strong>特别提醒：</strong>东西半球分界线<strong>不是 0° 经线</strong>，而是 20°W 和 160°E 组成的经线圈，目的是避免把欧洲、非洲的一些国家分割到两个半球。
+            </div>
+        </div>
+    </div>
+
+    <div class="node c2">
+        <div class="card">
+            <span class="tag">对比辨析 · 必考</span>
+            <h3>地球自转 vs 公转：一句话抓住区别 <span class="status must">必背表格</span></h3>
+            <table class="compare">
+                <tr><th>对比项</th><th>地球自转</th><th>地球公转</th></tr>
+                <tr><td>绕转中心</td><td><span class="hl">地轴</span></td><td><span class="hl">太阳</span></td></tr>
+                <tr><td>方向</td><td>自西向东（北极上空看逆时针，南极上空看顺时针）</td><td>自西向东</td></tr>
+                <tr><td>周期</td><td>约 24 小时（一天）</td><td>约 365 天（一年）</td></tr>
+                <tr><td>产生现象</td><td>昼夜更替、时间差异（东早西晚）、日月星辰东升西落</td><td>四季变化、昼夜长短变化、五带划分</td></tr>
+            </table>
+            <div class="qa">
+                <strong>易错辨析：</strong>地球自转产生的是<strong>昼夜更替</strong>，而不是“昼夜现象”。昼夜现象（地球本身不发光不透明）在自转之前就已经存在；自转让昼夜不断交替。
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== 第三章 ==================== -->
+    <div class="unit-title c3">
+        <span class="badge">第三章</span>
+        <h2>地球的面貌</h2>
+        <div class="sub">海陆分布 · 地形 · 海陆变迁</div>
+    </div>
+
+    <div class="node c3">
+        <div class="card">
+            <span class="tag">数据速记</span>
+            <h3>世界的海陆分布 <span class="status key">常考比例</span></h3>
+            <ul>
+                <li>地球表面海洋约占 <strong>71%</strong>，陆地约占 <strong>29%</strong>——“<span class="hl">七分海洋，三分陆地</span>”。</li>
+                <li>七大洲面积排序（从大到小）：<strong>亚洲、非洲、北美洲、南美洲、南极洲、欧洲、大洋洲</strong>。</li>
+                <li>四大洋面积排序：<strong>太平洋、大西洋、印度洋、北冰洋</strong>。</li>
+                <li>海洋最深处：<strong>马里亚纳海沟</strong>；陆地最高点：<strong>珠穆朗玛峰</strong>。</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="node c3">
+        <div class="card">
+            <span class="tag">板块构造 · 必背</span>
+            <h3>海陆变迁与板块运动 <span class="status must">高频</span></h3>
+            <ul>
+                <li>海陆变迁的证据：喜马拉雅山发现海洋生物化石（海洋变高原）；南极大陆发现煤田。</li>
+                <li>大陆漂移说：魏格纳提出，南美洲东岸与非洲西岸轮廓遥相对应。</li>
+                <li>板块构造学说：全球大致分为<strong>六大板块</strong>（亚欧、非洲、印度洋、太平洋、美洲、南极洲）。</li>
+                <li><span class="hl">板块内部地壳比较稳定；板块交界地带地壳活跃</span>，多火山、地震。</li>
+                <li>两大火山地震带：<strong>环太平洋火山地震带</strong>、<strong>地中海—喜马拉雅火山地震带</strong>。</li>
+            </ul>
+            <div class="qa">
+                <strong>运动方向与结果：</strong>板块<strong>碰撞挤压</strong>（→←）常形成山脉、海沟、岛弧（如喜马拉雅山脉由亚欧板块与印度洋板块碰撞挤压形成，珠峰仍在升高）；板块<strong>张裂拉伸</strong>（←→）常形成裂谷或海洋（如红海在扩张，地中海在缩小）。
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== 第四章 ==================== -->
+    <div class="unit-title c4">
+        <span class="badge">第四章</span>
+        <h2>世界的居民与文化</h2>
+        <div class="sub">人口 · 人种 · 语言宗教 · 聚落</div>
+    </div>
+
+    <div class="node c4">
+        <div class="card">
+            <span class="tag">数据与分布 · 常考</span>
+            <h3>世界人口与人种 <span class="status key">理解性考点</span></h3>
+            <ul>
+                <li>2022 年世界人口突破 <strong>80 亿</strong>；近 60% 的人口集中在<strong>亚洲</strong>。</li>
+                <li>人口自然增长率由<strong>出生率</strong>和<strong>死亡率</strong>共同决定，与经济发展水平密切相关。</li>
+                <li>人口稠密区：亚洲东部和南部、欧洲西部、北美洲东部；人口稀疏区：极端干旱、湿热、高寒地区。</li>
+                <li>三大人种：<strong>白色人种、黄色人种、黑色人种</strong>（人种划分主要依据体质特征，没有优劣之分）。</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="node c4">
+        <div class="card">
+            <span class="tag">表格对比 · 必背</span>
+            <h3>联合国六大语言与三大宗教 <span class="status must">高频选择题</span></h3>
+            <table class="compare">
+                <tr><th>类别</th><th>核心内容</th><th>关键区分</th></tr>
+                <tr>
+                    <td>六大语言</td>
+                    <td>汉语、英语、法语、俄语、西班牙语、阿拉伯语</td>
+                    <td><span class="hl">汉语使用人数最多</span>；<span class="hl">英语使用范围最广</span></td>
+                </tr>
+                <tr>
+                    <td>三大宗教</td>
+                    <td>基督教、伊斯兰教、佛教</td>
+                    <td>基督教信徒最多；伊斯兰教在中国又称“回教”；佛教创始于古印度</td>
+                </tr>
+                <tr>
+                    <td>宗教建筑</td>
+                    <td>基督教—教堂；伊斯兰教—清真寺；佛教—佛塔/寺庙</td>
+                    <td>根据建筑特征判断宗教是常见读图题</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="node c4">
+        <div class="card">
+            <span class="tag">聚落 · 理解与应用</span>
+            <h3>聚落的形成与保护</h3>
+            <ul>
+                <li>聚落主要形式：<strong>城市</strong>与<strong>乡村</strong>。</li>
+                <li>聚落形成与发展的有利条件：水源充足、地形平坦、土壤肥沃、交通便利、气候适宜。</li>
+                <li>传统民居反映环境：因纽特人冰屋（寒冷）、东南亚高脚屋（湿热）、黄土高原窑洞（黄土直立性）。</li>
+                <li>传统聚落是历史时期人类活动与自然环境相互作用的结果，<strong>保护传统聚落</strong>有助于保留历史记忆与建筑智慧。</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ==================== 第五章 ==================== -->
+    <div class="unit-title c5">
+        <span class="badge">第五章</span>
+        <h2>世界的气候</h2>
+        <div class="sub">天气与气候 · 气温降水 · 气候类型</div>
+    </div>
+
+    <div class="node c5">
+        <div class="card">
+            <span class="tag">概念辨析</span>
+            <h3>天气 vs 气候：时间尺度不同 <span class="status key">基础区分</span></h3>
+            <table class="compare">
+                <tr><th>对比项</th><th>天气</th><th>气候</th></tr>
+                <tr><td>时间尺度</td><td>短时间（分钟、小时、天）</td><td>长时间（多年平均状况）</td></tr>
+                <tr><td>稳定性</td><td>多变，不稳定</td><td>相对稳定</td></tr>
+                <tr><td>描述词汇</td><td>阴、晴、雨、雪、风、气温高低</td><td>终年高温、四季分明、冬冷夏热、全年湿润</td></tr>
+                <tr><td>典型例句</td><td>“今天下午有雷阵雨”</td><td>“昆明四季如春”</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="node c5">
+        <div class="card">
+            <span class="tag">气温与降水 · 规律必背</span>
+            <h3>气温与降水的分布规律 <span class="status must">读图基础</span></h3>
+            <ul>
+                <li><strong>气温：</strong>从低纬度向高纬度逐渐降低；同纬度地区，海拔越高气温越低（大致每升高 100 米，气温下降约 0.6℃）。</li>
+                <li><strong>降水：</strong>赤道地区降水多，两极地区降水少；<span class="hl">南北回归线附近，大陆东岸降水多、西岸降水少</span>；中纬度沿海地区降水多、内陆地区降水少。</li>
+                <li>气候两大基本要素：<strong>气温</strong>与<strong>降水</strong>。</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="node c5">
+        <div class="card">
+            <span class="tag">核心表格 · 全册最高频</span>
+            <h3>世界主要气候类型：分布 + 特征速查 <span class="status must">必背</span></h3>
+            <table class="compare">
+                <tr><th>气候类型</th><th>主要分布</th><th>核心特征</th></tr>
+                <tr><td>热带雨林气候</td><td>赤道附近（亚马孙平原、刚果盆地、马来群岛）</td><td><span class="hl">全年高温多雨</span></td></tr>
+                <tr><td>热带草原气候</td><td>热带雨林气候南北两侧，非洲最广</td><td>全年高温，分干湿两季</td></tr>
+                <tr><td>热带沙漠气候</td><td>南北回归线附近大陆西岸和内部</td><td>全年炎热干燥</td></tr>
+                <tr><td>热带季风气候</td><td>亚洲南部和东南部（印度半岛、中南半岛）</td><td>全年高温，分旱雨两季</td></tr>
+                <tr><td>亚热带季风气候</td><td>大陆东岸中低纬度（中国南方、美国东南部）</td><td>夏季高温多雨，冬季温和少雨</td></tr>
+                <tr><td>地中海气候</td><td><span class="hl">大陆西岸中纬度</span>（地中海沿岸最典型）</td><td><span class="hl">夏季炎热干燥，冬季温和多雨</span></td></tr>
+                <tr><td>温带季风气候</td><td>大陆东岸中纬度（中国北方、朝鲜半岛、日本北部）</td><td>夏季高温多雨，冬季寒冷干燥</td></tr>
+                <tr><td>温带海洋性气候</td><td>大陆西岸中纬度（西欧最典型）</td><td><span class="hl">全年温和湿润</span>，降水均匀</td></tr>
+                <tr><td>温带大陆性气候</td><td>大陆内部（亚欧大陆、北美大陆内部）</td><td>冬冷夏热，降水少且集中于夏季</td></tr>
+            </table>
+            <div class="qa">
+                <strong>气候类型判读口诀：</strong>“<strong>以温定带，以水定型</strong>”——先看最冷月气温判断温度带（>15℃ 为热带，0—15℃ 为亚热带/温带海洋性，<0℃ 为温带/寒带），再看降水季节分配确定具体类型。地中海气候与亚热带季风气候的<strong>根本区别</strong>：前者雨热不同期（夏干冬雨），后者雨热同期（夏雨冬干）。
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== 第六章 ==================== -->
+    <div class="unit-title c6">
+        <span class="badge">第六章</span>
+        <h2>世界的发展差异</h2>
+        <div class="sub">发达国家 vs 发展中国家</div>
+    </div>
+
+    <div class="node c6">
+        <div class="card">
+            <span class="tag">表格对比 · 理解性考点</span>
+            <h3>发达国家与发展中国家的差异 <span class="status key">常考</span></h3>
+            <table class="compare">
+                <tr><th>对比项</th><th>发达国家</th><th>发展中国家</th></tr>
+                <tr><td>分布</td><td>欧洲西部、北美洲（美国、加拿大）、大洋洲（澳大利亚、新西兰）、亚洲的日本</td><td>亚洲、非洲、拉丁美洲</td></tr>
+                <tr><td>经济发展水平</td><td>工农业生产发达，科技水平高</td><td>工农业生产相对落后，科技水平有待提高</td></tr>
+                <tr><td>国际贸易地位</td><td>多出口工业制成品、高技术产品，利润较高</td><td>多出口初级产品（农矿产品），利润较低</td></tr>
+                <tr><td>南北差异</td><td>“北”</td><td>“南”</td></tr>
+            </table>
+            <div class="qa">
+                <strong>“南北对话”与“南南合作”：</strong>发展中国家与发达国家之间关于经济、政治等方面问题的商谈，称为“<strong>南北对话</strong>”；发展中国家之间的互助合作，称为“<strong>南南合作</strong>”。两者的根本目标是缩小发展差距，建立更加公平合理的国际经济秩序。
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
